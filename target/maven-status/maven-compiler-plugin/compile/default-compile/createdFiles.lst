@@ -1,0 +1,5 @@
+Main.class
+service\battery\BatteryInfoService.class
+service\notification\BatteryAlarmTask.class
+service\battery\PowerShellBatteryInfoService.class
+service\notification\BatteryAlarmTask$1.class
