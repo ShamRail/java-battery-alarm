@@ -33,7 +33,7 @@ public class BatteryAlarmTask implements Runnable, Closeable {
         this.minPercent = Integer.parseInt(properties.getProperty("percent.min"));
         this.maxPercent = Integer.parseInt(properties.getProperty("percent.max"));
         try {
-            this.mediaFile = this.getClass().getClassLoader().getResource(properties.getProperty("media.file")).getFile();
+            this.mediaFile = properties.getProperty("media.file");
             this.logger = new PrintStream(String.format("%s.txt", LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE)));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

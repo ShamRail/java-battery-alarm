@@ -10,7 +10,6 @@ public class PowerShellBatteryInfoService implements BatteryInfoService {
 
     private static final String POWER_ONLINE_QUERY = "powershell -command \"Get-WmiObject -Class batterystatus -Namespace root\\wmi | select PowerOnline\"";
 
-
     @Override
     public int getBatteryPercent() {
         try {
